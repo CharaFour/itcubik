@@ -7,23 +7,12 @@ state1 = "Неизвестно"
 state2 = "Неизвестно"
 
 
-if x1 == y1:
-    state1 = "Черная"
+if x1 == y1 and x2 == y2:
+    state1 = "YES"
 else:
-    if x1 % 2 != y1 % 2:
-        state1 = "Белая"
-    elif x1 % 2 == y1 % 2:
-        state1 = "Черная"
-
-if x2 == y2:
-    state2 = "Черная"
-else:
-    if x2 % 2 != y2 % 2:
-        state2 = "Белая"
-    elif x2 % 2 == y2 % 2:
-        state2 = "Черная"
-
-if state1 == state2:
-    print("YES")
-else:
-    print("NO")
+    if x1 % 2 != y1 % 2 and x2 % 2 != y2 % 2:
+        state1 = "YES"
+    elif x1 % 2 == y1 % 2 and x2 % 2 == y2 % 2:
+        state1 = "YES"
+    else:
+        print("NO")
