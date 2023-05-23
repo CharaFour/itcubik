@@ -1,0 +1,10 @@
+a = int(input("Введите число:"))
+b = int(input("Введите число:"))
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+print(a**5 + b**5)
